@@ -1,0 +1,260 @@
+.hide {
+    visibility: hidden;
+}
+
+
+.icon-horizontal {
+    display: flex;
+    align-items: center;
+}
+
+.icon-horizontal svg {
+    margin-right: 6px
+}
+
+.icon-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.change-color {
+    transition: background-color .3s, color .3s;
+}
+
+.change-color path {
+    transition: fill .3s;
+}
+
+.hover-blue:hover {
+    color: #4daae4;
+}
+
+.hover-blue:hover svg {
+    fill: #4daae4;
+}
+
+.bg-pink {
+    background-color: #ea7a99;
+}
+
+.bg-pink:hover {
+    background-color: #ed91ab;
+}
+
+.bg-orange {
+    background-color: #f0973b;
+}
+
+.bg-orange:hover {
+    background-color: #f1a248;
+}
+
+.bg-red {
+    background-color: #e17e79;
+}
+
+.bg-red:hover {
+    background-color: #e5938f;
+}
+
+.bg-green {
+    background-color: #73be77;
+}
+
+.bg-green:hover {
+    background-color: #85ce8a;
+}
+
+.bg-blue {
+    background-color: #4eabe6;
+}
+
+.bg-blue:hover {
+    background-color: #51b2e0;
+}
+
+.bounce:hover {
+    animation: bounce 0.2s ease-in-out;
+    display: inline-block;
+}
+
+.bg-gray {
+    background-color: #f6f7f8;
+}
+
+.bg-gray:hover {
+    background-color: #e3e5e7;
+}
+
+.disabled {
+    cursor: not-allowed;
+    background: #00aeec;
+    opacity: .5;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-3px);
+    }
+}
+
+@media (min-width:0px) {
+    body {
+        min-width: 952px;
+    }
+
+    .header-upload-entry {
+        padding: 6px 0 6px 6px;
+    }
+
+    .left-channel li {
+        margin-right: 10px;
+    }
+
+    .left-channel .icon-bg {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .right-channel {
+        height: 65.5px;
+    }
+
+    .right-channel_right {
+        width: 230px;
+    }
+
+    .right-channel_left {
+        padding-right: 20px;
+        grid-template-columns: repeat(9, 1fr);
+    }
+
+    .homeRecommend {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .video-card:nth-of-type(-n+5) {
+        margin-top: 0px;
+    }
+
+    .video-card:nth-of-type(n+6) {
+        margin-top: 40px;
+    }
+
+    .video-card:nth-of-type(n+10) {
+        margin-top: 22px;
+    }
+
+    .homeRecommend {
+        position: relative;
+    }
+
+    .roll-btn {
+        left: initial;
+        right: 0;
+    }
+}
+
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* 适配按钮 */
+@media (min-width: 952px) {
+    .homeRecommend {
+        position: static;
+    }
+
+    .roll-btn {
+        left: initial;
+        right: 10px;
+        transform: initial
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .roll-btn {
+        left: 100%;
+        transform: translate(-50px);
+    }
+
+    .right-entry li {
+        margin-left: 8px;
+    }
+
+    .header-upload-entry {
+        padding: 6px 20px;
+    }
+
+    .left-channel li {
+        margin-right: 16px;
+    }
+
+    .right-channel_right {
+        width: 240px;
+    }
+
+    .right-channel_left {
+        padding-right: 30px;
+    }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .left-entry li {
+        margin-right: 18px;
+    }
+
+    .right-entry li {
+        margin-left: 30px;
+    }
+
+    .left-channel li {
+        margin-right: 24px;
+    }
+
+    .left-channel .icon-bg {
+        width: 46px;
+        height: 46px;
+        line-height: 46px;
+    }
+
+    .right-channel {
+        height: 71.5px;
+    }
+
+    .right-channel_left {
+        grid-template-columns: repeat(11, 1fr);
+    }
+
+    .homeRecommend {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .video-card:nth-of-type(-n+7) {
+        margin-top: 0;
+    }
+
+    .video-card:nth-of-type(n+8) {
+        margin-top: 40px;
+    }
+
+    .video-card:nth-of-type(n+13) {
+        margin-top: 24px;
+    }
+}
